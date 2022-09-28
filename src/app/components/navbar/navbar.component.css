@@ -1,0 +1,35 @@
+.logoLupe, img {
+    width: 10vw;  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 0px;
+    border-radius: 2px;
+    background-color: #9A898E;
+    transition: 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+

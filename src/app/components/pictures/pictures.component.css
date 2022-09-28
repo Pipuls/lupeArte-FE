@@ -1,0 +1,16 @@
+.lupe-avatar {
+    background-color: #E3A845;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lupe-txt {
+    background-color: #fff;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

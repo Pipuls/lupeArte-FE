@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+/* Custom fonts */
+@font-face {
+  font-family: "Optimus";
+  src: local("Optimus"),
+    url(./assets/fonts/OptimusPrinceps.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OptimusB";
+  src: local("OptimusB"),
+    url(./assets/fonts/OptimusPrincepsSemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Loves";
+  src: local("Loves"), url(./assets/fonts/LOVES.ttf) format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Loves", sans-serif;
+  font-weight: 900;
+  background-color: #3c3a3a6c;
+  scroll-behavior: smooth;
+}

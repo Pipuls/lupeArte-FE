@@ -1,0 +1,32 @@
+section{
+    margin-top: -150px;
+    z-index: -1;
+}
+h1,h3,h4,h5,h6,p{
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(46, 46, 46, 0.7);
+
+}
+
+.lupe-avatar {
+    background-color: #E3A845;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lupe-txt {
+    background-color: #fff;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

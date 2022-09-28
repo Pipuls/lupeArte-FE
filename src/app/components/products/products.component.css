@@ -1,0 +1,208 @@
+section {
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: "Optimus", sans-serif;
+    font-weight: 600;
+}
+
+.lupe-logos {
+    background-color: #E3A845;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    -webkit-row-gap: 20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.lupe-txt {
+    background-color: #fff;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* cards */
+.card {
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 350px;
+}
+
+.imgLogo {
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    transform: translate(-50%);
+    width: 150px;
+    height: 150px;
+    background: #373737;
+    border-radius: 50%;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .imgLogo {
+    width: 250px;
+    height: 250px;
+}
+
+.imgLogo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transform: translateY(100px);
+    transition: 0.5s ease;
+
+}
+
+.card:hover .content .details {
+    transform: translateY(-30px);
+}
+
+
+.card .content .details h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #373737;
+    line-height: 2rem;
+
+}
+
+.card .content .details h2 span {
+    font-family: Loves, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.card .content .details .info {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px, 0;
+}
+
+.card .content .details .info h3 {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.card .content .details .info h3 span {
+    font-size: 0.75em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.card .content .details .actionBtn {
+    display: flex;
+    justify-content: center;
+}
+
+/*.card .content .details .actionBtn button:nth-child(2){
+    border: 1px solid #373737;
+    color: #373737;
+    background: #f4e5bf80;
+
+} */
+
+.gradient-btn {
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 2px solid #3c3a3a;
+    background: linear-gradient(45deg, #f4e5bf, #ed892d);
+    color: #3c3a3a;
+    cursor: pointer;
+    position: relative;
+}
+
+.gradient-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #ed892d, #f4e5bf);
+    color: white;
+    z-index: -1;
+    filter: blur(0px);
+    transition: 0.5s ease;
+}
+
+.gradient-btn:hover::after {
+    filter: blur(15px);
+}
+.txt-box {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* .decoTitle{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 13ch;
+    animation: typing1 2s steps(13), blink 0.5s step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing1 {
+    from {
+        width: 0
+    }    
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+    
+}
+
+.quikTitle{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 10ch;
+    animation: typing1 2s steps(10), blink 0.5s step-end alternate;
+    overflow: hidden;
+} */
